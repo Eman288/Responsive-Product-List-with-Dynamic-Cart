@@ -2,7 +2,7 @@
 
 let jsonData = [];  // Initialize jsonData as an empty array
 
-fetch('../data.json')
+fetch('data.json')
 .then(response => response.json())
 .then(data => {
     jsonData = data;  // Assign the fetched data to jsonData
