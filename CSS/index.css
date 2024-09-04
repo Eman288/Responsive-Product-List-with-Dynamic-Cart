@@ -1,0 +1,441 @@
+@font-face
+    {
+      font-family: 'variableFont';
+      src: url('../assets/fonts/RedHatText-VariableFont_wght.ttf');
+    }
+
+    @font-face
+    {
+      font-family: 'Italic-VariableFont';
+      src: url('../assets/fonts/RedHatText-Italic-VariableFont_wght.ttf');
+    }
+
+    @font-face
+    {
+      font-family: 'variableFontReg';
+      src: url('../assets/fonts/static/RedHatText-Regular.ttf');
+    }
+
+    @font-face
+    {
+      font-family: 'variableFontBold';
+      src: url('../assets/fonts/static/RedHatText-Bold.ttf');
+    }
+
+    @font-face
+    {
+      font-family: 'variableFontSBold';
+      src: url('../assets/fonts/static/RedHatText-SemiBold.ttf');
+    }
+
+    /*main body design*/
+    body {
+      margin: 0;
+      background-color: #fcf8f5;
+      font-family: 'variableFontReg';
+    }
+
+    .attribution {
+      font-size: 11px;
+       text-align: center;
+      }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    main {
+      display: flex;
+    justify-content: center;
+    background-color: #fcf8f5;
+    padding: 40px;
+    width: calc(100% - 80px);
+    }
+
+    /*desserts-cards section*/
+    .Desserts-section {
+      width: 70%;
+    }
+
+    .Desserts-section > p {
+      margin-top: 0;
+      font-size: 2.5vw;
+      color: #1c110d;
+      font-family: 'variableFontBold';
+    }
+
+    .desserts-cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: calc((100% - 38px) / 3);
+      margin-left: 10px;
+      height: 300px;
+      background-color: #fcf8f5;
+    }
+
+    .card-img {
+      height: 60%;
+      width: 100%;
+      border: 1px solid transparent;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      border-radius: 5px
+    }
+
+    .noAdd img {
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 5px;
+    }
+
+    .Add img {
+      width: 1vw;
+      height: 1vw;
+      border: 1px solid azure;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .card button {
+      position: relative;
+      left: 20%;
+      top: 89%;
+      width: 60%;
+      border: 1px solid #c55839;
+      padding: 5px;
+      border-radius: 20px;
+    }
+
+    .Add {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #c55839;
+      color: azure;
+      padding: 12px !important;
+    }
+
+    .noAdd {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .card .noAdd img {
+      width: 20%;
+    }
+    .card button p {
+      margin: 0;
+      margin-left: 5%;
+      font-size: 75%;
+      text-align: center;
+      font-family: 'variableFontBold';
+    }
+
+    .card .noAdd:hover p {
+      color: #c55839;
+    }
+
+    button.Add {
+      display: none;
+    }
+    /*card text*/
+    .card-text {
+      font-size: 75%;
+      padding: 15px 5px;
+      font-family: 'variableFontBold';
+      color: #1c110d;
+    }
+
+    .card-text p {
+      margin: 5px 0;
+    }
+
+    .card-light-text {
+      color: #caafa7;
+      font-family: 'variableFontSBold';
+      font-size: 20%;
+    }
+
+    .card-price {
+      color: #c55839;
+    }
+
+    /*cart section*/
+    #order-there {
+      display: none;
+    }
+
+    .cart-section {
+      width: 25%;
+      background-color: #fff;
+      height: max-content;
+      padding: 20px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+    }
+
+    .cart-section > p {
+      color: #c55839;
+      font-size: 1.7vw;
+      margin: 0;
+      font-family: 'variableFontBold';
+    }
+      /*orders*/
+      .order {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      border-bottom: 1px solid #d1cccb;
+    }
+
+    .orders > div {
+      border-bottom: 1px solid #d1cccb;
+    }
+
+    .order-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .order-details > p {
+      font-size: 1vw;
+      color: rgb(49, 43, 40);
+      font-family: 'variableFontSBold';
+      margin: 5px 0;
+    }
+
+    .order-cost {
+      color: #caafa7 !important;
+    }
+
+    .order-cost span {
+      display: inline-block;
+      color: #c55839;
+      margin-right: 5px;
+    }
+
+    .remove-order {
+      background-image: url('../assets/images/icon-remove-item.svg');
+      width: 1vw;
+      height: 1vw;
+      background-size: contain;
+      border: 1px solid #caafa7;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .remove-order:hover {
+      filter: contrast(.5);      
+    }
+
+    /*order total area*/
+    .order-total {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      font-size: 1.3vw;
+      color: #afaaa9;
+      font-family: 'variableFontBold';
+    }
+
+    .total {
+      color: #1c110d;
+      font-size: 1.7vw;      
+    }
+
+    .order-note {
+      background-color: #fcf8f5;
+      padding: 10px;
+      font-size: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      margin: 10px 0 20px 0;
+      text-align: center;
+      font-family: 'variableFontSBold';
+      color: #444040;
+    }
+
+    .order-note span
+    {
+      display: inline-block;
+      font-family: 'variableFontBold';
+      margin: 0 3px;
+    }
+
+    .confirm-Button {
+      width: 100%;
+      text-align: center;
+      background-color: #c55839;
+      padding: 10px;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      color: azure;
+      cursor: pointer;
+    }
+
+    .confirm-Button:hover {
+      background-color: #962d0c;
+    }
+
+    .carbon-img {
+      display: inline-block;
+      background-image: url('../assets/images/icon-carbon-neutral.svg');
+      width: 1.5vw;
+      height: 1.5vw;
+      background-size: contain;
+    }
+
+    /*cart none*/
+    #order-none {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+
+    #order-none img{
+        width: 50%;
+    }
+
+    #order-none p {
+      font-size: 20%;
+      color: #87635a;
+      font-family: 'variableFontBold';
+      text-align: center;
+    }
+    
+    /*Confirm Section*/
+    .confirm {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid transparent;
+      /* display: flex; */
+      border-radius: 10px;
+      width: 40%;
+      height: fit-content;
+      min-height: 300px;
+      position: absolute;
+      padding: 10px;
+      top: 25%;
+      left: 30%;
+    }
+
+    .confirm h2 {
+      font-family: 'variableFontBold';
+      width: 100%;
+      font-size: 2vw;
+      margin-left: 30px;
+    }
+
+    .confirm h2::before {
+      display: block;
+      content: "";
+      background-image: url(../assets/images/icon-order-confirmed.svg);
+      background-size: 50px 50px;
+      width: 50px; 
+      height: 50px;
+    }
+
+    .confirm h2::after {
+      display: block;
+      content: 'We hope you enjoy your food!';
+      color: #caafa7;
+      font-family: 'variableFontSBold';
+      font-size: 1vw;
+    }
+
+    .confirm button {
+      cursor: pointer;
+      background-color: #c63c0d;
+      border: 1px solid transparent;
+      padding: 10px;
+      width: 100%;
+      border-radius: 20px;
+      color: #fff;
+    }
+
+    .confirm button:hover {
+      background-color: #962d0c;
+    }
+
+    .payment {
+      width: 80%;
+      background-color: #fcf8f5;
+      padding: 0 20px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .pay {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+    }
+
+    .pay img {
+      width: 25%;
+      order: 1px solid transparent;
+      border-radius: 10px;
+    }
+
+    .pay-text {
+    font-size: 10%;
+    padding: 10px;
+    text-align: left;
+    font-family: 'variableFontBold';
+    }
+
+    .orderp {
+      margin-bottom: 10px;
+      padding: 10px 0;
+    }
+    /*media*/
+
+    @media (max-width: 700px) {
+      .card {
+        width: calc((100% - 38px) / 2);
+      }
+    }
+
+    @media (max-width: 400px) {
+      main {
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .cart-section {
+        width: 100%;
+      }
+
+      .card button {
+        width: 50%;
+        left: 25%;
+      }
+
+      .Desserts-section {
+        width: 100%;
+      }
+
+      .Desserts-section > p {
+        font-size: 6vw;
+      }
+    }
