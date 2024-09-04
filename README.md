@@ -44,8 +44,8 @@ Mobile Version
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Eman288/Responsive-Product-List-with-Dynamic-Cart)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [the repo](https://github.com/Eman288/Responsive-Product-List-with-Dynamic-Cart)
+- Live Site URL: [Test it yourself]([https://your-live-site-url.com](https://eman288.github.io/Responsive-Product-List-with-Dynamic-Cart/))
 
 
 ### Built with
