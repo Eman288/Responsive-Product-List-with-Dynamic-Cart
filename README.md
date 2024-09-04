@@ -86,5 +86,5 @@ the way i use to get the data from the json file and create the cards
 
 ## Author
 
-- LinkedIn - [Add your name here](https://www.linkedin.com/in/eman-tamam-47a2a9241/)
+- LinkedIn - [Eman Tamam](https://www.linkedin.com/in/eman-tamam-47a2a9241/)
 - Frontend Mentor - [@Eman288](https://www.frontendmentor.io/profile/Eman288)
